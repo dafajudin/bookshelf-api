@@ -3,7 +3,14 @@ const books = require('./book');
 
 const addNewBookHandler = (request, h) => {
     const {
-        name, year, author, summary, publisher, pageCount, readPage, reading,
+        name,
+        year,
+        author,
+        summary,
+        publisher,
+        pageCount,
+        readPage,
+        reading,
     } = request.payload;
 
     // VALIDATION CHECK
